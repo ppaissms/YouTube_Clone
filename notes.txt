@@ -1,0 +1,65 @@
+ ** Requirement **
+- Features
+
+- Tech Stack
+  - Redux (For big application Redux is very useful to maintain state)
+  - Tailwind (Using Tailwind we can create the application very fast and very easy to use)
+  - React Routing Dom(For routing)
+  - Bunder
+  - Jest For testing
+  - Higher Order Functions
+  - Debouncing : -
+
+                  Cleanup for Component Unmounting:
+                When a component using useEffect is unmounted (removed from the DOM), the cleanup function is executed. This is important for cleaning up any ongoing processes or subscriptions that the effect might have started.
+
+                Cleanup for Dependency Changes:
+                If the useEffect hook depends on certain values (specified in the dependency array), the cleanup function is called before the effect runs again. This ensures that any previous effect is cleaned up before a new one is initiated.
+
+                Preventing Memory Leaks:
+                Without proper cleanup, you could end up with lingering timers, subscriptions, or event listeners that consume memory and resources even after the component is no longer in use. The cleanup function helps prevent these issues.
+
+    - Caching(Using Redux) for searching 
+    - Created n level nesting comments
+    - Infinite Scroll is much more than pagination and live chat is much more than Infinite Scroll
+
+    (
+      * Challenges with live chat 
+        - Get Data live
+        - Update the UI
+      
+      * What happens when new comment is came
+        - new comment div added in 
+        - Even if 1000 of commets came, my page is not get stuck
+
+      * How to handle live Data
+       - (1) Web Socket : 
+             . It is a 2 way connection ie it is handshake between UI and server
+             . Once we create a handshake then send data from either SideBar
+             . No time interval
+             . eg Zeroda,grow,insta,whatapp,youTube
+
+       - (2) Long Polling(API polling) : 
+             . UI request the server and then server send data
+             . One directional at a timers
+             . It has some time interval
+             . eg E-mail,cricBuzz
+      * Why laptop screen is not frezz
+             . youtube deleted the message after some interval of time
+             
+    ) 
+
+
+- Components
+  - Head
+  - Body
+    - SideBar
+      - SideItems
+    - Main Container
+      - Button list
+      - Video Container
+         - Video Cart
+
+
+
+ 
